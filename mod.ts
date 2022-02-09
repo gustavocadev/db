@@ -1,1 +1,1 @@
-export { Dbjson } from './dbjson'
+export { Dbjson } from './dbjson.ts'
