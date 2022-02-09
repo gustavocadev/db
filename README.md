@@ -11,7 +11,7 @@ const dbjson = new Dbjson('./db/users.json') // we need to choose the relative p
 
 const { users } = await dbjson.readJSON()
 
-router.get('/users', isAuth, (ctx) => {
+router.get('/users', (ctx) => {
    
     ctx.response.body = {
         users
