@@ -4,7 +4,7 @@ Bbjson gonna help you to interact with your json files that way you can use it a
 
 ```typescript
 // we import the module
-import { Dbjson } from "https://deno.land/x/dbjson@v1.1/mod.ts";
+import { Dbjson } from "https://deno.land/x/dbjson@LATEST_VERSION/mod.ts";
 
 // we define the type
 type User = {
