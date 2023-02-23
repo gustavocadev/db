@@ -1,5 +1,4 @@
-import { Dbjson } from "../mod.ts";
-import * as path from "https://deno.land/std/path/mod.ts";
+import { DbJSON } from "../mod.ts";
 
 type User = {
   name: string;
@@ -7,9 +6,9 @@ type User = {
   id: string;
 };
 
-const dbjson = new Dbjson("./examples/db/db.json", "users");
+const db = new DbJSON("./examples/db/db.json", "users");
 
-const { users } = await dbjson.readJSON<User>();
+const { users } = await db.readJSON<User>();
 
 users.push({
   name: "tobi",
@@ -17,7 +16,6 @@ users.push({
   id: crypto.randomUUID(),
 });
 
-await dbjson.writeJSON(users);
+await db.writeJSON(users);
 
 console.log(users);
-

@@ -1,1 +1,1 @@
-export { Dbjson } from "./dbjson.ts";
+export * from "./main.ts";
